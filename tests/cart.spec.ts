@@ -17,7 +17,7 @@ async function addProductAndGoToCart(page: any) {
   await page.locator('article[role="link"]').first().click();
   
   // Wait for add to cart API call to complete
-  const responsePromise = page.waitForResponse(response => 
+  const responsePromise = page.waitForResponse((response: any) => 
     response.url().includes('/api/cart') && response.status() === 200
   );
   
