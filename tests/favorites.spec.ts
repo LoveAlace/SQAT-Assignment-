@@ -20,7 +20,7 @@ test.describe('Favorites / Wishlist', () => {
     const productCard = page.locator('a[href^="/product/"]').first();
     
     // Get product name from the card
-    const productName = await productCard.locator('h3, p, span').first().textContent();
+    const productName = await productCard.locator('heading, h2, h3').first().textContent();
     
     // Find favorite button (look for heart or bookmark icon)
     // Try multiple possible selectors
