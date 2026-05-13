@@ -9,8 +9,9 @@
     "test:ui": "playwright test --ui",
     "report": "playwright show-report"
   },
+  "postinstall": "npx playwright install",
   "devDependencies": {
-    "@playwright/test": "^1.54.0",
+    "@playwright/test": "^1.61.0-alpha-2026-05-13",
     "@types/node": "^22.0.0",
     "dotenv": "^16.4.5",
     "typescript": "^5.5.4"
